@@ -1,0 +1,19 @@
+Temps=[29.9, 30.8, 30.0, 29.8, 30.3, 31.1, 31.6, 32, 32.8, 33.5]
+T_times=[0, 1, 2, 3, 5, 8, 16, 32, 60, 120]
+
+2NBtimes=np.array([0,20,40,60,120])
+2NBdeg=[188.4, 163.9, 145.9, 103.5, 83.2]
+
+
+#Change times to match your times of sampling
+timesR=np.array([0, 1, 2, 5, 7, 10])*60 #put in times and convert to seconds
+PNtime=np.array([0, 0.5, 1, 1.5, 2, 3, 5])*60 #put in times and convert to seconds
+times=np.array([0, 2, 4, 8, 16, 32, 60, 120])*60
+timesL=np.array([0, 2, 4, 8, 16, 32, 120])*60
+
+#Put in HPLC Results Here
+RB=[69.4, 66.1, 60.5, 51.1, 44.4, 37.1]
+PN=[72, 65.8, 58.7, 53.4, 47.6, 39.4, 24.2] 
+Lig=[76.2, 76.2, 76.1, 74.5, 72.8, 72.1, 64.2]
+Jug=[72.2, 72.1, 71.5, 70.3, 67.9, 64.1, 58, 46.6]
+
