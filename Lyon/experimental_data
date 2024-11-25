@@ -1,0 +1,88 @@
+#RB: Rose Bengal, PN: Perinapthenone, JUG: Juglone, LIG: Lignin, isop: isopropanol
+#2NB: 2-nitrobenzaldehyde, PNA: para-nitroanisole, Py: Pyridine
+
+#experiments performed in photoreactor (approx 25 mL total volume) with solutions of 20 mL. 
+#The irradiation pathlength through the sample is 3.5 cm
+
+#uv-vis in following datasheets: all_uv_vis.csv (delimiter=';')
+#measured irradiance of Xe lamp: photoox_Xe_spectrum_3.txt
+
+#experiment RB1: 10 µM RB + 20 µM FFA + 1 mM isop, 16/05/2024
+RB1 = [74683,60597,37393,26616,10112,4854] #UHPLC data
+time_RB1 = np.array([0, 1.5, 3, 5, 10, 15])*60 #s
+
+#experiment PN1: 10 µM PN + 20 µM FFA + 1 mM isop, 16/05/2024
+PN1 = [79297,74046,71710,59475,55343,51868] #UHPLC data
+time_PN1 = np.array([0, 1, 2, 4, 6, 8])*60 #s
+
+#experiment BLANK1: 20 µM FFA + 1 mM isop, 17/05/2024
+#BLANK1 = [84841,87702,79630,75328,83854,83252] #UHPLC data
+time_BLANK1 = np.array([0, 1.5, 3, 5, 10, 15])*60 #s
+
+#experiment RB2: 10 µM RB + 20 µM FFA + 1 mM isop, 17/05/2024
+RB2 = [81275,54094,39760,18139,13050,5802] #UHPLC data
+time_RB2 = np.array([0, 1.5, 3, 5, 10, 15])*60 #s
+
+#experiment PN2: 10 µM PN + 20 µM FFA + 1 mM isop, 17/05/2024
+PN2 = [77243,74541,70799,60161,48992,47203] #UHPLC data
+time_PN2 = np.array([0, 1, 2, 4, 6, 8])*60 #s
+
+#experiment RB3: 10 µM RB + 20 µM FFA + 1 mM isop, 21/05/2024
+RB3 = [83066,65013,42946,25696,15014,6800] #UHPLC data
+time_RB3 = np.array([0, 1.5, 3, 5, 10, 15])*60 #s
+
+#experiment PN3: 10 µM PN + 20 µM FFA + 1 mM isop, 21/05/2024
+PN3 = [85212,80201,76756,70668,59587,53123] #UHPLC data
+time_PN3 = np.array([0, 1, 2, 4, 6, 8])*60 #s
+
+#Chemical actinometer experiment NB1: 10 µM 2NB, 21/05/2024
+NB1 = [23410,22144,19169,17290,15186,13300,10607] #UHPLC data
+NBtime = np.array([0,20,40,60,90,120,180]) #s
+
+experiment PN4: 10 µM PN + 20 µM FFA + 1 mM isop, 05/07/2024
+PN4 = [79573,78555,70837,63403,59112,48268] #UHPLC data
+time_PN4 = np.array([0, 1, 2, 4, 6, 8])*60 #s
+
+#Chemical actinometer experiment PNA: 10 µM PNA + 10 mM Py, 05/07/2024
+PNA = [59801,45525,34147,25326,9912,4938,2037] #UHPLC data
+PNAtime = np.array([0,20,40,60,120,180,240])*60 #s
+
+#Chemical actinometer experiment NB2: 10 µM 2NB, 05/07/2024
+NB2 = [14814,13085,11705,10549,8946,7834,5827] #UHPLC data
+NB2time = np.array([0,20,40,60,90,120,180]) #s
+
+experiment JUG1: 30 µM JUG + 20 µM FFA + 1 mM isop, 08/07/2024
+JUG1 = [87230,79967,81915,75841,68085,68409] #UHPLC data
+time_JUG1 = np.array([0,30,60,90,120,187])*60 #s
+
+experiment JUG2: 30 µM JUG + 20 µM FFA + 1 mM isop, 09/07/2024
+JUG2 = [84344,76167,72017,66535,64898,63388] #UHPLC data
+time_JUG2 = np.array([0,30,60,120,155,180])*60 #s
+
+#experiment BLANK2: 20 µM FFA + 1 mM isop, 09/07/2024
+#BLANK2 = [97619,98435,94013,98081,99722,93618] #UHPLC data
+time_BLANK2 = np.array([0,30,60,90,120,180])*60 #s
+
+#experiment LIG1: 40 mg/L LIG + 20 µM FFA + 1 mM isop, 22/08/2024
+LIG1: = [81510,79046,79664,76740,72171,73736] #UHPLC data
+time_LIG1 = np.array([0,90,150,210,270,360])*60 #s
+
+#experiment LIG2: 40 mg/L LIG + 20 µM FFA + 1 mM isop, 23/08/2024
+LIG2: = [78117,78606,76547,74312,71622,70011,69611,71362] #UHPLC data
+time_LIG2 = np.array([0,70,120,180,240,300,360,420])*60 #s
+
+experiment JUG3: 30 µM JUG + 20 µM FFA + 1 mM isop, 26/08/2024
+JUG3 = [77350,72360,73757,70816,71271,67766,67067] #UHPLC data
+time_JUG3 = np.array([0,30,60,90,120,150,180])*60 #s
+
+#experiment LIG3: 40 mg/L LIG + 20 µM FFA + 1 mM isop, 27/08/2024
+LIG3: = [76343,75197,73520,75372,72022,67029,71022,68354] #UHPLC data
+time_LIG3 = np.array([0,60,135,183,240,300,360,420])*60 #s
+
+experiment PN5: 30 µM PN + 20 µM FFA + 1 mM isop, 28/08/2024
+PN5 = [78181,66406,58139,48008,43930,35176] #UHPLC data
+time_PN5 = np.array([0, 1, 2.67, 4, 5, 7])*60 #s
+
+experiment PN6: 30 µM PN + 20 µM FFA + 1 mM isop, 28/08/2024
+PN6 = [78191,72276,56919,57134,38327,34043] #UHPLC data
+time_PN6 = np.array([0, 1, 2, 3, 5, 7])*60 #s
